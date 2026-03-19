@@ -1,0 +1,45 @@
+{
+  "data": {
+    "items": [
+      {
+        "system": {
+          "id": "vehicle-wrapper-fernhay-001",
+          "name": "Fernhay Vehicles",
+          "codename": "fernhay_vehicles",
+          "type": "vehicle_wrapper",
+          "collection": "fernhay",
+          "language": "default"
+        },
+        "elements": {
+          "vehicle": {
+            "linkedItems": [
+              {
+                "system": {
+                  "id": "vehicle-fernhay-eav",
+                  "name": "Fernhay eAV",
+                  "codename": "fernhay_eav",
+                  "type": "vehicle",
+                  "collection": "fernhay",
+                  "language": "default"
+                },
+                "elements": {
+                  "make": { "value": [{ "name": "Fernhay", "codename": "fernhay" }] },
+                  "model": { "value": [{ "name": "eAV", "codename": "eav" }] },
+                  "description": {
+                    "value": "<p>Fully electric, zero-emission commercial vehicle platform. Small-format cutaway chassis designed for urban logistics, last-mile delivery, mobile retail, and municipal operations. Designed by Fernhay, manufactured by EAVX.</p>"
+                  },
+                  "image": { "value": [{ "url": "/logos/fernhay-eav-chassis.png", "name": "fernhay-eav.png" }] },
+                  "flags_384b6cf": {
+                    "value": [{ "name": "Enable Build", "codename": "enable_build" }]
+                  },
+                  "gvwr__gvwr_unit": { "value": [{ "name": "lbs", "codename": "lbs" }] },
+                  "gvwr__gvwr_value": { "value": 1500 }
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

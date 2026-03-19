@@ -1,0 +1,1807 @@
+{
+  "data": {
+    "items": [
+      {
+        "system": {
+          "id": "vehicle-fernhay-eav-kiosk",
+          "name": "Fernhay eAV — Kiosk",
+          "codename": "fernhay_eav_kiosk",
+          "type": "vehicle",
+          "collection": "fernhay",
+          "language": "default"
+        },
+        "elements": {
+          "make": {
+            "value": [
+              {
+                "name": "Fernhay",
+                "codename": "fernhay"
+              }
+            ]
+          },
+          "model": {
+            "value": [
+              {
+                "name": "eAV Kiosk",
+                "codename": "eav_kiosk"
+              }
+            ]
+          },
+          "description": {
+            "value": "<p>Mobile retail and service point with fold-out serving window. Built on Fernhay eAV electric cutaway chassis. Designed for mobile vending, café service, and merchandise display. Chassis designed by Fernhay, manufactured by EAVX.</p>"
+          },
+          "image": {
+            "value": [
+              {
+                "url": "/logos/body-kiosk.png",
+                "description": "",
+                "name": ""
+              }
+            ]
+          },
+          "flags_384b6cf": {
+            "value": [
+              {
+                "name": "Enable Build",
+                "codename": "enable_build"
+              }
+            ]
+          },
+          "gvwr__gvwr_unit": {
+            "value": [
+              {
+                "name": "lbs",
+                "codename": "lbs"
+              }
+            ]
+          },
+          "gvwr__gvwr_value": {
+            "value": 1500
+          },
+          "vocation": {
+            "value": [
+              {
+                "name": "Utility Services",
+                "codename": "utility_services"
+              }
+            ]
+          },
+          "configuration_sections": {
+            "linkedItems": [
+              {
+                "system": {
+                  "id": "cs-ki-chassis",
+                  "name": "Chassis",
+                  "codename": "ki_chassis",
+                  "type": "configuration_section"
+                },
+                "elements": {
+                  "title": {
+                    "value": "Chassis"
+                  },
+                  "description": {
+                    "value": "Fernhay eAV electric cutaway chassis — designed by Fernhay, manufactured by EAVX"
+                  },
+                  "configuration_option_category": {
+                    "value": []
+                  },
+                  "flags": {
+                    "value": [
+                      {
+                        "name": "Cannot Deselect",
+                        "codename": "cannot_deselect"
+                      },
+                      {
+                        "name": "Is part of Base MSRP",
+                        "codename": "is_part_of_base_msrp"
+                      }
+                    ]
+                  },
+                  "options": {
+                    "linkedItems": [
+                      {
+                        "system": {
+                          "id": "co-ki-chassis-base",
+                          "name": "eAV Cutaway Chassis",
+                          "codename": "ki_chassis_base",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "eAV Cutaway Chassis"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Fully electric cutaway chassis platform. Includes powertrain, battery pack, frame, suspension, steering, and braking systems. Designed and manufactured by Fernhay.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "/logos/body-kiosk.png",
+                                "description": "Fernhay eAV",
+                                "name": "fernhay-eav.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "eav-chassis-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": [
+                              {
+                                "name": "Included",
+                                "codename": "included"
+                              },
+                              {
+                                "name": "Should Select By Default",
+                                "codename": "should_select_by_default"
+                              }
+                            ]
+                          },
+                          "weight__value": {
+                            "value": 800
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 8
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-ki-chassis-default",
+                                  "codename": "p_ki_chassis_default",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 17000
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": [
+                              {
+                                "url": "/models/equad-chassis.glb",
+                                "name": "equad-chassis.glb"
+                              }
+                            ]
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "system": {
+                  "id": "cs-ki-body",
+                  "name": "Kiosk Body",
+                  "codename": "ki_body",
+                  "type": "configuration_section"
+                },
+                "elements": {
+                  "title": {
+                    "value": "Kiosk Body"
+                  },
+                  "description": {
+                    "value": "Kiosk body with fold-up serving window — manufactured by EAVX"
+                  },
+                  "configuration_option_category": {
+                    "value": []
+                  },
+                  "flags": {
+                    "value": [
+                      {
+                        "name": "Cannot Deselect",
+                        "codename": "cannot_deselect"
+                      },
+                      {
+                        "name": "Is part of Base MSRP",
+                        "codename": "is_part_of_base_msrp"
+                      }
+                    ]
+                  },
+                  "options": {
+                    "linkedItems": [
+                      {
+                        "system": {
+                          "id": "co-ki-body-serving",
+                          "name": "Kiosk Body with Serving Window",
+                          "codename": "ki_body_serving",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Kiosk Body with Serving Window"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Box body with fold-up service window/awning on curbside. Includes counter surface, overhead lighting, and weather seal.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "/images/config/kiosk-empty.png",
+                                "description": "Kiosk Body",
+                                "name": "kiosk-empty.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "kiosk-body-serving-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": [
+                              {
+                                "name": "Included",
+                                "codename": "included"
+                              },
+                              {
+                                "name": "Should Select By Default",
+                                "codename": "should_select_by_default"
+                              }
+                            ]
+                          },
+                          "weight__value": {
+                            "value": 300
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 12
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-ki-body-serving",
+                                  "codename": "p_ki_body_serving",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 6000
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "system": {
+                  "id": "cs-ki-interior",
+                  "name": "Interior Layout",
+                  "codename": "ki_interior",
+                  "type": "configuration_section"
+                },
+                "elements": {
+                  "title": {
+                    "value": "Interior Layout"
+                  },
+                  "description": {
+                    "value": "Select interior layout configuration for the kiosk body"
+                  },
+                  "configuration_option_category": {
+                    "value": []
+                  },
+                  "flags": {
+                    "value": []
+                  },
+                  "options": {
+                    "linkedItems": [
+                      {
+                        "system": {
+                          "id": "co-ki-interior-none",
+                          "name": "No Layout",
+                          "codename": "ki_interior_none",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "No Layout"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>No interior layout. Empty kiosk shell for custom buildout or third-party installations.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": []
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": []
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": [
+                              {
+                                "name": "Interior Layout",
+                                "codename": "interior_layout"
+                              }
+                            ]
+                          },
+                          "flags": {
+                            "value": [
+                              {
+                                "name": "Should Select By Default",
+                                "codename": "should_select_by_default"
+                              }
+                            ]
+                          },
+                          "weight__value": {
+                            "value": 0
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 0
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-ki-interior-none",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 0
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      },
+                      {
+                        "system": {
+                          "id": "co-ki-interior-cafe",
+                          "name": "Coffee/Café Setup",
+                          "codename": "ki_interior_cafe",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Coffee/Café Setup"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Espresso machine mount, prep counter, sink with water tank, under-counter refrigerator mount, and service counter. Designed for mobile café and beverage service operations (Starbucks, Einstein's).</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "/images/config/kiosk-coffee.png",
+                                "description": "Coffee/Café Setup",
+                                "name": "ki_interior_cafe.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "kiosk-cafe-setup-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": []
+                          },
+                          "weight__value": {
+                            "value": 120
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 12
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-ki-interior-cafe",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 5000
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      },
+                      {
+                        "system": {
+                          "id": "co-ki-interior-merch",
+                          "name": "Merchandise Display",
+                          "codename": "ki_interior_merch",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Merchandise Display"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Adjustable display shelving, merchandise racks, point-of-sale counter, and integrated lighting. Designed for mobile retail and merchandise display operations.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "/images/config/kiosk-merchandise.png",
+                                "description": "Merchandise Display",
+                                "name": "ki_interior_merch.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "kiosk-merch-display-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": []
+                          },
+                          "weight__value": {
+                            "value": 80
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 10
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-ki-interior-merch",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 3500
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      },
+                      {
+                        "system": {
+                          "id": "co-ki-interior-service",
+                          "name": "Service Body Layout",
+                          "codename": "ki_interior_service",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Service Body Layout"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Workbench, tool storage, and parts bins for mobile repair/service operations.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "/images/config/kiosk-service.png",
+                                "description": "Service Body Layout",
+                                "name": "ki_interior_service.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "kiosk-service-layout-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": []
+                          },
+                          "weight__value": {
+                            "value": 90
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 10
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-ki-interior-service",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 3500
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "system": {
+                  "id": "cs-ki-storage",
+                  "name": "Storage System",
+                  "codename": "ki_storage",
+                  "type": "configuration_section"
+                },
+                "elements": {
+                  "title": {
+                    "value": "Storage System"
+                  },
+                  "description": {
+                    "value": "Select storage options for the kiosk body"
+                  },
+                  "configuration_option_category": {
+                    "value": []
+                  },
+                  "flags": {
+                    "value": [
+                      {
+                        "name": "Cannot Deselect",
+                        "codename": "cannot_deselect"
+                      }
+                    ]
+                  },
+                  "options": {
+                    "linkedItems": [
+                      {
+                        "system": {
+                          "id": "co-ki-storage-drawers",
+                          "name": "Under-Counter Drawers",
+                          "codename": "ki_storage_drawers",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Under-Counter Drawers"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Lockable slide-out drawers beneath counter surface.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "kiosk-under-counter-drawers.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "kiosk-under-counter-drawers-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": []
+                          },
+                          "weight__value": {
+                            "value": 40
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 8
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-ki-storage-drawers",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 1500
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      },
+                      {
+                        "system": {
+                          "id": "co-ki-storage-overhead",
+                          "name": "Overhead Storage Cabinets",
+                          "codename": "ki_storage_overhead",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Overhead Storage Cabinets"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Locking overhead cabinets for supplies and inventory.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "kiosk-overhead-cabinets.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "kiosk-overhead-cabinets-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": []
+                          },
+                          "weight__value": {
+                            "value": 35
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 8
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-ki-storage-overhead",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 1200
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "system": {
+                  "id": "cs-ki-paint",
+                  "name": "Paint",
+                  "codename": "ki_paint",
+                  "type": "configuration_section"
+                },
+                "elements": {
+                  "title": {
+                    "value": "Exterior Color"
+                  },
+                  "description": {
+                    "value": "Select exterior paint color"
+                  },
+                  "configuration_option_category": {
+                    "value": []
+                  },
+                  "flags": {
+                    "value": [
+                      {
+                        "name": "Cannot Deselect",
+                        "codename": "cannot_deselect"
+                      }
+                    ]
+                  },
+                  "options": {
+                    "linkedItems": [
+                      {
+                        "system": {
+                          "id": "co-ki-paint-white",
+                          "name": "White",
+                          "codename": "ki_paint_white",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "White (Standard)"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Standard white exterior finish. Included in base price.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "paint-white.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "paint-white-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": [
+                              {
+                                "name": "Included",
+                                "codename": "included"
+                              },
+                              {
+                                "name": "Should Select By Default",
+                                "codename": "should_select_by_default"
+                              }
+                            ]
+                          },
+                          "weight__value": {
+                            "value": 0
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 0
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-ki-paint-white",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 0
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      },
+                      {
+                        "system": {
+                          "id": "co-ki-paint-black",
+                          "name": "Black",
+                          "codename": "ki_paint_black",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Black"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Black exterior finish.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "paint-black.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "paint-black-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": []
+                          },
+                          "weight__value": {
+                            "value": 0
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 2
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-ki-paint-black",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 500
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      },
+                      {
+                        "system": {
+                          "id": "co-ki-paint-custom",
+                          "name": "Custom Color",
+                          "codename": "ki_paint_custom",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Custom Color"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Custom exterior color matched to customer specifications. Includes fleet branding color matching.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "paint-custom.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "paint-custom-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": []
+                          },
+                          "weight__value": {
+                            "value": 0
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 4
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-ki-paint-custom",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 1500
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "system": {
+                  "id": "cs-ki-charger",
+                  "name": "Charger",
+                  "codename": "ki_charger",
+                  "type": "configuration_section"
+                },
+                "elements": {
+                  "title": {
+                    "value": "Charger"
+                  },
+                  "description": {
+                    "value": "Select a charging solution for your vehicle"
+                  },
+                  "configuration_option_category": {
+                    "value": []
+                  },
+                  "flags": {
+                    "value": []
+                  },
+                  "options": {
+                    "linkedItems": [
+                      {
+                        "system": {
+                          "id": "co-ki-charger-l2",
+                          "name": "Level 2 AC Charger (7.2 kW)",
+                          "codename": "ki_charger_l2",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Level 2 AC Charger (7.2 kW)"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Standard Level 2 AC charging unit for overnight depot charging. Ideal for fleet operations with predictable schedules.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "charger-l2.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "charger-l2-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "ChargePoint",
+                                "codename": "chargepoint"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": []
+                          },
+                          "weight__value": {
+                            "value": 15
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 4
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-ki-charger-l2",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 800
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      },
+                      {
+                        "system": {
+                          "id": "co-ki-charger-dc",
+                          "name": "DC Fast Charger (50 kW)",
+                          "codename": "ki_charger_dc",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "DC Fast Charger (50 kW)"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>DC fast charging unit enabling rapid charging at commercial depots. 80% charge in under 1 hour.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "charger-dc.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "charger-dc-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "ChargePoint",
+                                "codename": "chargepoint"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": []
+                          },
+                          "weight__value": {
+                            "value": 45
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 6
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-ki-charger-dc",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 3500
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "chargers": {
+            "linkedItems": []
+          },
+          "powertrain": {
+            "linkedItems": []
+          },
+          "upfits": {
+            "linkedItems": []
+          },
+          "untitled_linked_items": {
+            "linkedItems": []
+          }
+        }
+      }
+    ]
+  }
+}

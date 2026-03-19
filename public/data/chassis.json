@@ -1,0 +1,17 @@
+[
+  {
+    "id": "chassis-eav-standard",
+    "modelName": "eAV Cutaway Chassis",
+    "typeClass": "Light-Duty EV",
+    "gvwr": { "value": 1500, "unit": "lbs" },
+    "basePrice": 14000,
+    "msrp": 17000,
+    "leadTime": 8,
+    "payloadCapacity": { "value": 800, "unit": "lbs" },
+    "status": "Active",
+    "lastUpdated": "2026-01-15",
+    "description": "All-electric cutaway chassis platform for urban commercial applications. Designed for last-mile delivery and utility services.",
+    "compatibleBodies": ["Standard Box", "Climate Conditioned", "Flat Bed", "Kiosk"],
+    "manufacturer": "Fernhay"
+  }
+]

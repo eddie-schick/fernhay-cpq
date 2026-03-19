@@ -1,0 +1,122 @@
+{
+  "_comment": "=== VEHICLES LIST TEMPLATE ===",
+  "_comment_usage": "This replaces the getVehicles() Kontent call in store/endpoints/vehicles/vehicles.ts",
+  "_comment_api_call": "kontentAiDeliveryClient.items<VehicleWrapper>().equalsFilter('system.type', 'vehicle_wrapper')",
+  "_comment_note": "The API returns a VehicleWrapper item containing a linked list of Vehicle items. The code reads: response.data.items[0].elements.vehicle.linkedItems",
+
+  "data": {
+    "items": [
+      {
+        "_comment": "This is the VehicleWrapper — a container item. Usually just one exists.",
+        "system": {
+          "id": "FILL_IN: UUID of the wrapper item",
+          "name": "FILL_IN: e.g. 'Fernhay Vehicles'",
+          "codename": "FILL_IN: e.g. 'fernhay_vehicles'",
+          "type": "vehicle_wrapper",
+          "collection": "fernhay",
+          "language": "default"
+        },
+        "elements": {
+          "vehicle": {
+            "_comment": "Linked list of all Vehicle items that appear on 'Build My Vehicle' page",
+            "_type": "LinkedItemsElement<Vehicle>",
+            "linkedItems": [
+
+              {
+                "_comment": "=== VEHICLE 1 — repeat this block for each vehicle ===",
+                "system": {
+                  "id": "FILL_IN: UUID of this vehicle (used as vehicleId in getSingleVehicle call)",
+                  "name": "FILL_IN: display name",
+                  "codename": "FILL_IN: e.g. 'fernhay_eav' — stored as vehicle__kontentAi__codename",
+                  "type": "vehicle",
+                  "collection": "fernhay",
+                  "language": "default"
+                },
+                "elements": {
+                  "make": {
+                    "_comment": "Vehicle manufacturer — taxonomy element",
+                    "_type": "TaxonomyElement<VehicleMake>",
+                    "_required": true,
+                    "value": [
+                      {
+                        "name": "FILL_IN: e.g. 'Fernhay'",
+                        "codename": "FILL_IN: e.g. 'fernhay'"
+                      }
+                    ]
+                  },
+
+                  "model": {
+                    "_comment": "Vehicle model — taxonomy element. model.value[0].name used as display name AND vehicleModel__kontentAi__codename",
+                    "_type": "TaxonomyElement<VehicleModel>",
+                    "_required": true,
+                    "value": [
+                      {
+                        "name": "FILL_IN: e.g. 'eAV' or 'Paxster'",
+                        "codename": "FILL_IN: e.g. 'eav'"
+                      }
+                    ]
+                  },
+
+                  "description": {
+                    "_comment": "Vehicle description — rich text (HTML string). Shown on vehicle card.",
+                    "_type": "RichTextElement",
+                    "_required": false,
+                    "value": "FILL_IN: e.g. '<p>The Fernhay eAV is a fully electric last-mile delivery vehicle.</p>'"
+                  },
+
+                  "image": {
+                    "_comment": "Main vehicle image — shown on vehicle card. Host this yourself.",
+                    "_type": "AssetsElement",
+                    "_required": false,
+                    "value": [
+                      {
+                        "url": "FILL_IN: URL to vehicle image (Kontent CDN URLs will be dead — re-host)",
+                        "name": "FILL_IN: e.g. 'fernhay-eav.png'"
+                      }
+                    ]
+                  },
+
+                  "flags_384b6cf": {
+                    "_comment": "Feature flags for this vehicle. Multiple choice. Check the 'name' field to match.",
+                    "_type": "MultipleChoiceElement",
+                    "_required": false,
+                    "_known_values": [
+                      "'Enable Build' — if present, vehicle appears as buildable on 'Build My Vehicle' page",
+                      "'Enable Pool Inventory' — if present, pool inventory tab is shown",
+                      "'Show Chargers' — if present, charger section appears in configurator"
+                    ],
+                    "value": [
+                      { "name": "Enable Build", "codename": "enable_build" },
+                      { "name": "Enable Pool Inventory", "codename": "enable_pool_inventory" },
+                      { "name": "Show Chargers", "codename": "show_chargers" }
+                    ]
+                  },
+
+                  "gvwr__gvwr_unit": {
+                    "_comment": "GVWR unit — from GVWR snippet. Multiple choice.",
+                    "_type": "MultipleChoiceElement",
+                    "_required": true,
+                    "value": [
+                      {
+                        "name": "FILL_IN: 'lbs' or 'kg'",
+                        "codename": "FILL_IN: 'lbs' or 'kg'"
+                      }
+                    ]
+                  },
+
+                  "gvwr__gvwr_value": {
+                    "_comment": "GVWR numeric value — Gross Vehicle Weight Rating",
+                    "_type": "NumberElement",
+                    "_required": true,
+                    "value": "FILL_IN: number, e.g. 6000"
+                  }
+                }
+              }
+
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

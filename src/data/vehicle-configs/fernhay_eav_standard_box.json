@@ -1,0 +1,2206 @@
+{
+  "data": {
+    "items": [
+      {
+        "system": {
+          "id": "vehicle-fernhay-eav-standard-box",
+          "name": "Fernhay eAV — Standard Box",
+          "codename": "fernhay_eav_standard_box",
+          "type": "vehicle",
+          "collection": "fernhay",
+          "language": "default"
+        },
+        "elements": {
+          "make": {
+            "value": [
+              {
+                "name": "Fernhay",
+                "codename": "fernhay"
+              }
+            ]
+          },
+          "model": {
+            "value": [
+              {
+                "name": "eAV Standard Box",
+                "codename": "eav_standard_box"
+              }
+            ]
+          },
+          "description": {
+            "value": "<p>The Fernhay eAV Standard Box (Package Cube) is a modular box body built on the eAV electric cutaway chassis. Designed for last-mile delivery and service upfits with universal attachment points for interior customization. Chassis designed by Fernhay, manufactured by EAVX.</p>"
+          },
+          "image": {
+            "value": [
+              {
+                "url": "/logos/body-standard-box.png",
+                "description": "",
+                "name": ""
+              }
+            ]
+          },
+          "flags_384b6cf": {
+            "value": [
+              {
+                "name": "Enable Build",
+                "codename": "enable_build"
+              }
+            ]
+          },
+          "gvwr__gvwr_unit": {
+            "value": [
+              {
+                "name": "lbs",
+                "codename": "lbs"
+              }
+            ]
+          },
+          "gvwr__gvwr_value": {
+            "value": 1500
+          },
+          "vocation": {
+            "value": [
+              {
+                "name": "Package Delivery",
+                "codename": "package_delivery"
+              },
+              {
+                "name": "Utility Services",
+                "codename": "utility_services"
+              }
+            ]
+          },
+          "configuration_sections": {
+            "linkedItems": [
+              {
+                "system": {
+                  "id": "cs-sb-chassis",
+                  "name": "Chassis",
+                  "codename": "sb_chassis",
+                  "type": "configuration_section"
+                },
+                "elements": {
+                  "title": {
+                    "value": "Chassis"
+                  },
+                  "description": {
+                    "value": "Fernhay eAV electric cutaway chassis — designed by Fernhay, manufactured by EAVX"
+                  },
+                  "configuration_option_category": {
+                    "value": []
+                  },
+                  "flags": {
+                    "value": [
+                      {
+                        "name": "Cannot Deselect",
+                        "codename": "cannot_deselect"
+                      },
+                      {
+                        "name": "Is part of Base MSRP",
+                        "codename": "is_part_of_base_msrp"
+                      }
+                    ]
+                  },
+                  "options": {
+                    "linkedItems": [
+                      {
+                        "system": {
+                          "id": "co-sb-chassis-base",
+                          "name": "eAV Cutaway Chassis",
+                          "codename": "sb_chassis_base",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "eAV Cutaway Chassis"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Fully electric cutaway chassis platform. Includes powertrain, battery pack, frame, suspension, steering, and braking systems. Designed and manufactured by Fernhay.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "/logos/body-standard-box.png",
+                                "description": "Fernhay eAV",
+                                "name": "fernhay-eav.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "eav-chassis-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": [
+                              {
+                                "name": "Included",
+                                "codename": "included"
+                              },
+                              {
+                                "name": "Should Select By Default",
+                                "codename": "should_select_by_default"
+                              }
+                            ]
+                          },
+                          "weight__value": {
+                            "value": 800
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 8
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-sb-chassis-default",
+                                  "codename": "p_sb_chassis_default",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 17000
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": [
+                              {
+                                "url": "/models/equad-chassis.glb",
+                                "name": "equad-chassis.glb"
+                              }
+                            ]
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "system": {
+                  "id": "cs-sb-body",
+                  "name": "Box Body",
+                  "codename": "sb_body",
+                  "type": "configuration_section"
+                },
+                "elements": {
+                  "title": {
+                    "value": "Box Body"
+                  },
+                  "description": {
+                    "value": "Core modular box body — floor, walls, roof, and skeleton structure. Manufactured by EAVX."
+                  },
+                  "configuration_option_category": {
+                    "value": []
+                  },
+                  "flags": {
+                    "value": [
+                      {
+                        "name": "Cannot Deselect",
+                        "codename": "cannot_deselect"
+                      },
+                      {
+                        "name": "Is part of Base MSRP",
+                        "codename": "is_part_of_base_msrp"
+                      }
+                    ]
+                  },
+                  "options": {
+                    "linkedItems": [
+                      {
+                        "system": {
+                          "id": "co-sb-body-standard",
+                          "name": "Standard Box Body",
+                          "codename": "sb_body_standard",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Standard Box Body"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Core modular box body with composite floor, aluminum walls, fiberglass roof, and steel skeleton structure. Includes floor integration and chassis attachment hardware. Universal attachment points for interior upfit modules.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "standard-box-body.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "standard-box-body-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": [
+                              {
+                                "name": "Included",
+                                "codename": "included"
+                              },
+                              {
+                                "name": "Should Select By Default",
+                                "codename": "should_select_by_default"
+                              }
+                            ]
+                          },
+                          "weight__value": {
+                            "value": 250
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 8
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-sb-body-default",
+                                  "codename": "p_sb_body_default",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 5000
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "system": {
+                  "id": "cs-sb-doors",
+                  "name": "Door Configuration",
+                  "codename": "sb_doors",
+                  "type": "configuration_section"
+                },
+                "elements": {
+                  "title": {
+                    "value": "Door Configuration"
+                  },
+                  "description": {
+                    "value": "Select door type and location"
+                  },
+                  "configuration_option_category": {
+                    "value": []
+                  },
+                  "flags": {
+                    "value": [
+                      {
+                        "name": "Cannot Deselect",
+                        "codename": "cannot_deselect"
+                      }
+                    ]
+                  },
+                  "options": {
+                    "linkedItems": [
+                      {
+                        "system": {
+                          "id": "co-sb-door-rollup-rear",
+                          "name": "Roll-Up Door — Rear",
+                          "codename": "sb_door_rollup_rear",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Roll-Up Door — Rear"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Aluminum roll-up door on rear of box body. Standard for package delivery applications.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "/images/config/door-rollup-rear.png",
+                                "description": "Roll-Up Door — Rear",
+                                "name": "Roll-Up Door — Rear.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "rollup-rear-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": [
+                              {
+                                "name": "Door Type",
+                                "codename": "door_type"
+                              }
+                            ]
+                          },
+                          "flags": {
+                            "value": [
+                              {
+                                "name": "Should Select By Default",
+                                "codename": "should_select_by_default"
+                              }
+                            ]
+                          },
+                          "weight__value": {
+                            "value": 35
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 8
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-sb-door-rollup-rear",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 0
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      },
+                      {
+                        "system": {
+                          "id": "co-sb-door-swing-rear",
+                          "name": "Swing Doors — Rear",
+                          "codename": "sb_door_swing_rear",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Swing Doors — Rear"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Double swing-out doors on rear of box body. 270-degree opening for full cargo access.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "/images/config/door-swing-rear.png",
+                                "description": "Swing Doors — Rear",
+                                "name": "Swing Doors — Rear.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "swing-rear-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": [
+                              {
+                                "name": "Door Type",
+                                "codename": "door_type"
+                              }
+                            ]
+                          },
+                          "flags": {
+                            "value": []
+                          },
+                          "weight__value": {
+                            "value": 40
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 8
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-sb-door-swing-rear",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 200
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      },
+                      {
+                        "system": {
+                          "id": "co-sb-door-sliding-side",
+                          "name": "Sliding Door — Side",
+                          "codename": "sb_door_sliding_side",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Sliding Door — Side"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Sliding side door for curbside access. Ideal for delivery routes requiring frequent stops.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "/images/config/door-sliding-side.png",
+                                "description": "Sliding Door — Side",
+                                "name": "Sliding Door — Side.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "sliding-side-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": [
+                              {
+                                "name": "Door Type",
+                                "codename": "door_type"
+                              }
+                            ]
+                          },
+                          "flags": {
+                            "value": []
+                          },
+                          "weight__value": {
+                            "value": 30
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 10
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-sb-door-sliding-side",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 500
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      },
+                      {
+                        "system": {
+                          "id": "co-sb-door-rollup-both",
+                          "name": "Roll-Up Doors — Rear + Side",
+                          "codename": "sb_door_rollup_both",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Roll-Up Doors — Rear + Side"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Roll-up doors on both rear and curbside for maximum access flexibility.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "/images/config/door-rollup-rear-side.png",
+                                "description": "Roll-Up Doors — Rear + Side",
+                                "name": "door-rollup-rear-side.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "rollup-both-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": [
+                              {
+                                "name": "Door Type",
+                                "codename": "door_type"
+                              }
+                            ]
+                          },
+                          "flags": {
+                            "value": []
+                          },
+                          "weight__value": {
+                            "value": 65
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 10
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-sb-door-rollup-both",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 750
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "system": {
+                  "id": "cs-sb-interior",
+                  "name": "Interior Upfit",
+                  "codename": "sb_interior",
+                  "type": "configuration_section"
+                },
+                "elements": {
+                  "title": {
+                    "value": "Interior Upfit"
+                  },
+                  "description": {
+                    "value": "Select interior upfit configuration for the box body"
+                  },
+                  "configuration_option_category": {
+                    "value": []
+                  },
+                  "flags": {
+                    "value": [
+                      {
+                        "name": "Cannot Deselect",
+                        "codename": "cannot_deselect"
+                      }
+                    ]
+                  },
+                  "options": {
+                    "linkedItems": [
+                      {
+                        "system": {
+                          "id": "co-sb-upfit-none",
+                          "name": "No Upfit",
+                          "codename": "sb_upfit_none",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "No Upfit"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>No interior upfit. Empty cargo area for custom or third-party upfit installations.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": []
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": []
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": [
+                              {
+                                "name": "Interior Upfit",
+                                "codename": "interior_upfit"
+                              }
+                            ]
+                          },
+                          "flags": {
+                            "value": [
+                              {
+                                "name": "Should Select By Default",
+                                "codename": "should_select_by_default"
+                              }
+                            ]
+                          },
+                          "weight__value": {
+                            "value": 0
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 0
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-sb-upfit-none",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 0
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      },
+                      {
+                        "system": {
+                          "id": "co-sb-upfit-package",
+                          "name": "Package Delivery Shelving",
+                          "codename": "sb_upfit_package",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Package Delivery Shelving"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Modular shelf system designed for parcel sorting and delivery. Multiple shelf tiers with adjustable dividers. Optimized for last-mile delivery operations (UPS, USPS, Amazon DSP, DutchX, TikTok Shop, Temu, Alibaba).</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "/logos/upfit-package-shelving.png",
+                                "name": "package-shelving.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "/logos/upfit-package-shelving.png",
+                                "name": "package-shelving-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": [
+                              {
+                                "name": "Interior Upfit",
+                                "codename": "interior_upfit"
+                              }
+                            ]
+                          },
+                          "flags": {
+                            "value": []
+                          },
+                          "weight__value": {
+                            "value": 75
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 8
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-sb-upfit-package",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 2500
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      },
+                      {
+                        "system": {
+                          "id": "co-sb-upfit-service",
+                          "name": "Service Body Workbench",
+                          "codename": "sb_upfit_service",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Service Body Workbench"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Workbench, tool storage cabinets, and ladder rack configuration. Designed for utility and telecom service operations (Spectrum, Verizon, AT&T, Comcast, XCEL Energy, Con-Edison).</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "/logos/upfit-service-workbench.png",
+                                "name": "service-workbench.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "/logos/upfit-service-workbench.png",
+                                "name": "service-workbench-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": [
+                              {
+                                "name": "Interior Upfit",
+                                "codename": "interior_upfit"
+                              }
+                            ]
+                          },
+                          "flags": {
+                            "value": []
+                          },
+                          "weight__value": {
+                            "value": 100
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 10
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-sb-upfit-service",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 3500
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      },
+                      {
+                        "system": {
+                          "id": "co-sb-upfit-drycleaning",
+                          "name": "Dry Cleaning Hanging Rod System",
+                          "codename": "sb_upfit_drycleaning",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Dry Cleaning Hanging Rod System"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Overhead hanging rod system for garment transport. Includes adjustable height rods and garment retention clips. Designed for dry cleaning pickup and delivery services.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "/logos/upfit-drycleaning.png",
+                                "name": "drycleaning-rods.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "/logos/upfit-drycleaning.png",
+                                "name": "drycleaning-rods-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": [
+                              {
+                                "name": "Interior Upfit",
+                                "codename": "interior_upfit"
+                              }
+                            ]
+                          },
+                          "flags": {
+                            "value": []
+                          },
+                          "weight__value": {
+                            "value": 45
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 8
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-sb-upfit-drycleaning",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 1500
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      },
+                      {
+                        "system": {
+                          "id": "co-sb-upfit-drawer",
+                          "name": "Drawer System",
+                          "codename": "sb_upfit_drawer",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Drawer System"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Heavy-duty slide-out drawer system for organized tool and parts storage. Lockable drawers with ball-bearing slides. Ideal for service and maintenance operations.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "/logos/upfit-drawer-system.png",
+                                "name": "drawer-system.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "/logos/upfit-drawer-system.png",
+                                "name": "drawer-system-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": [
+                              {
+                                "name": "Interior Upfit",
+                                "codename": "interior_upfit"
+                              }
+                            ]
+                          },
+                          "flags": {
+                            "value": []
+                          },
+                          "weight__value": {
+                            "value": 60
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 8
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-sb-upfit-drawer",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 2000
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "system": {
+                  "id": "cs-sb-paint",
+                  "name": "Paint",
+                  "codename": "sb_paint",
+                  "type": "configuration_section"
+                },
+                "elements": {
+                  "title": {
+                    "value": "Exterior Color"
+                  },
+                  "description": {
+                    "value": "Select exterior paint color"
+                  },
+                  "configuration_option_category": {
+                    "value": []
+                  },
+                  "flags": {
+                    "value": [
+                      {
+                        "name": "Cannot Deselect",
+                        "codename": "cannot_deselect"
+                      }
+                    ]
+                  },
+                  "options": {
+                    "linkedItems": [
+                      {
+                        "system": {
+                          "id": "co-sb-paint-white",
+                          "name": "White",
+                          "codename": "sb_paint_white",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "White (Standard)"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Standard white exterior finish. Included in base price.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "paint-white.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "paint-white-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": [
+                              {
+                                "name": "Included",
+                                "codename": "included"
+                              },
+                              {
+                                "name": "Should Select By Default",
+                                "codename": "should_select_by_default"
+                              }
+                            ]
+                          },
+                          "weight__value": {
+                            "value": 0
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 0
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-sb-paint-white",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 0
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      },
+                      {
+                        "system": {
+                          "id": "co-sb-paint-black",
+                          "name": "Black",
+                          "codename": "sb_paint_black",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Black"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Black exterior finish.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "paint-black.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "paint-black-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": []
+                          },
+                          "weight__value": {
+                            "value": 0
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 2
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-sb-paint-black",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 500
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      },
+                      {
+                        "system": {
+                          "id": "co-sb-paint-custom",
+                          "name": "Custom Color",
+                          "codename": "sb_paint_custom",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Custom Color"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Custom exterior color matched to customer specifications. Includes fleet branding color matching.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "paint-custom.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "paint-custom-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": []
+                          },
+                          "weight__value": {
+                            "value": 0
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 4
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-sb-paint-custom",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 1500
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "system": {
+                  "id": "cs-sb-charger",
+                  "name": "Charger",
+                  "codename": "sb_charger",
+                  "type": "configuration_section"
+                },
+                "elements": {
+                  "title": {
+                    "value": "Charger"
+                  },
+                  "description": {
+                    "value": "Select a charging solution for your vehicle"
+                  },
+                  "configuration_option_category": {
+                    "value": []
+                  },
+                  "flags": {
+                    "value": []
+                  },
+                  "options": {
+                    "linkedItems": [
+                      {
+                        "system": {
+                          "id": "co-sb-charger-l2",
+                          "name": "Level 2 AC Charger (7.2 kW)",
+                          "codename": "sb_charger_l2",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Level 2 AC Charger (7.2 kW)"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Standard Level 2 AC charging unit for overnight depot charging. Ideal for fleet operations with predictable schedules.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "charger-l2.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "charger-l2-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "ChargePoint",
+                                "codename": "chargepoint"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": []
+                          },
+                          "weight__value": {
+                            "value": 15
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 4
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-sb-charger-l2",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 800
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      },
+                      {
+                        "system": {
+                          "id": "co-sb-charger-dc",
+                          "name": "DC Fast Charger (50 kW)",
+                          "codename": "sb_charger_dc",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "DC Fast Charger (50 kW)"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>DC fast charging unit enabling rapid charging at commercial depots. 80% charge in under 1 hour.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "charger-dc.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "charger-dc-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "ChargePoint",
+                                "codename": "chargepoint"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": []
+                          },
+                          "weight__value": {
+                            "value": 45
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 6
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-sb-charger-dc",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 3500
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "chargers": {
+            "linkedItems": []
+          },
+          "powertrain": {
+            "linkedItems": []
+          },
+          "upfits": {
+            "linkedItems": []
+          },
+          "untitled_linked_items": {
+            "linkedItems": []
+          }
+        }
+      }
+    ]
+  }
+}

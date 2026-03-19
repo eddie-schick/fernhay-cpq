@@ -1,0 +1,1816 @@
+{
+  "data": {
+    "items": [
+      {
+        "system": {
+          "id": "vehicle-fernhay-eav-reefer",
+          "name": "Fernhay eAV — Climate Conditioned",
+          "codename": "fernhay_eav_reefer",
+          "type": "vehicle",
+          "collection": "fernhay",
+          "language": "default"
+        },
+        "elements": {
+          "make": {
+            "value": [
+              {
+                "name": "Fernhay",
+                "codename": "fernhay"
+              }
+            ]
+          },
+          "model": {
+            "value": [
+              {
+                "name": "eAV Climate Conditioned",
+                "codename": "eav_climate_conditioned"
+              }
+            ]
+          },
+          "description": {
+            "value": "<p>Insulated box body with climate control for perishable delivery. Built on Fernhay eAV electric cutaway chassis. Chassis designed by Fernhay, manufactured by EAVX. Ideal for grocery and perishable last-mile delivery for fleets such as Amazon Fresh, Whole Foods, HyVee, Kroger, Walmart, Target, and Kernel.</p>"
+          },
+          "image": {
+            "value": [
+              {
+                "url": "/logos/body-climate-conditioned.png",
+                "description": "",
+                "name": ""
+              }
+            ]
+          },
+          "flags_384b6cf": {
+            "value": [
+              {
+                "name": "Enable Build",
+                "codename": "enable_build"
+              }
+            ]
+          },
+          "gvwr__gvwr_unit": {
+            "value": [
+              {
+                "name": "lbs",
+                "codename": "lbs"
+              }
+            ]
+          },
+          "gvwr__gvwr_value": {
+            "value": 1500
+          },
+          "vocation": {
+            "value": [
+              {
+                "name": "Package Delivery",
+                "codename": "package_delivery"
+              }
+            ]
+          },
+          "configuration_sections": {
+            "linkedItems": [
+              {
+                "system": {
+                  "id": "cs-rf-chassis",
+                  "name": "Chassis",
+                  "codename": "rf_chassis",
+                  "type": "configuration_section"
+                },
+                "elements": {
+                  "title": {
+                    "value": "Chassis"
+                  },
+                  "description": {
+                    "value": "Fernhay eAV electric cutaway chassis — designed by Fernhay, manufactured by EAVX"
+                  },
+                  "configuration_option_category": {
+                    "value": []
+                  },
+                  "flags": {
+                    "value": [
+                      {
+                        "name": "Cannot Deselect",
+                        "codename": "cannot_deselect"
+                      },
+                      {
+                        "name": "Is part of Base MSRP",
+                        "codename": "is_part_of_base_msrp"
+                      }
+                    ]
+                  },
+                  "options": {
+                    "linkedItems": [
+                      {
+                        "system": {
+                          "id": "co-rf-chassis-base",
+                          "name": "eAV Cutaway Chassis",
+                          "codename": "rf_chassis_base",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "eAV Cutaway Chassis"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Fully electric cutaway chassis platform. Includes powertrain, battery pack, frame, suspension, steering, and braking systems. Designed and manufactured by Fernhay.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "/logos/body-climate-conditioned.png",
+                                "description": "Fernhay eAV",
+                                "name": "fernhay-eav.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "eav-chassis-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": [
+                              {
+                                "name": "Included",
+                                "codename": "included"
+                              },
+                              {
+                                "name": "Should Select By Default",
+                                "codename": "should_select_by_default"
+                              }
+                            ]
+                          },
+                          "weight__value": {
+                            "value": 800
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 8
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-rf-chassis-default",
+                                  "codename": "p_rf_chassis_default",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 17000
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": [
+                              {
+                                "url": "/models/equad-chassis.glb",
+                                "name": "equad-chassis.glb"
+                              }
+                            ]
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "system": {
+                  "id": "cs-rf-body",
+                  "name": "Insulated Box Body",
+                  "codename": "rf_body",
+                  "type": "configuration_section"
+                },
+                "elements": {
+                  "title": {
+                    "value": "Insulated Box Body"
+                  },
+                  "description": {
+                    "value": "Insulated composite panel box body with thermal barrier for climate-controlled delivery"
+                  },
+                  "configuration_option_category": {
+                    "value": []
+                  },
+                  "flags": {
+                    "value": [
+                      {
+                        "name": "Cannot Deselect",
+                        "codename": "cannot_deselect"
+                      },
+                      {
+                        "name": "Is part of Base MSRP",
+                        "codename": "is_part_of_base_msrp"
+                      }
+                    ]
+                  },
+                  "options": {
+                    "linkedItems": [
+                      {
+                        "system": {
+                          "id": "co-rf-body-insulated",
+                          "name": "Insulated Box Body",
+                          "codename": "rf_body_insulated",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Insulated Box Body"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Insulated composite panel box body with thermal barrier. Includes vapor barrier, sealed joints, and insulated door seals. Designed for perishable grocery delivery for fleets such as Amazon Fresh, Whole Foods, HyVee, Kroger, Walmart, Target, and Kernel.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "insulated-box-body.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "insulated-box-body-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": [
+                              {
+                                "name": "Included",
+                                "codename": "included"
+                              },
+                              {
+                                "name": "Should Select By Default",
+                                "codename": "should_select_by_default"
+                              }
+                            ]
+                          },
+                          "weight__value": {
+                            "value": 350
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 10
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-rf-body-insulated",
+                                  "codename": "p_rf_body_insulated",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 9000
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "system": {
+                  "id": "cs-rf-refrigeration",
+                  "name": "Refrigeration Unit",
+                  "codename": "rf_refrigeration",
+                  "type": "configuration_section"
+                },
+                "elements": {
+                  "title": {
+                    "value": "Refrigeration Unit"
+                  },
+                  "description": {
+                    "value": "Select refrigeration configuration for climate-controlled delivery"
+                  },
+                  "configuration_option_category": {
+                    "value": []
+                  },
+                  "flags": {
+                    "value": [
+                      {
+                        "name": "Cannot Deselect",
+                        "codename": "cannot_deselect"
+                      }
+                    ]
+                  },
+                  "options": {
+                    "linkedItems": [
+                      {
+                        "system": {
+                          "id": "co-rf-refrig-chilled",
+                          "name": "Single-Zone Chilled",
+                          "codename": "rf_refrig_chilled",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Single-Zone Chilled"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Maintains 33–40°F for fresh grocery and produce delivery. Ideal for perishable last-mile operations for fleets such as Amazon Fresh, Whole Foods, HyVee, Kroger, Walmart, Target, and Kernel.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "/images/config/reefer-single-chilled.png",
+                                "description": "Single-Zone Chilled",
+                                "name": "Single-Zone Chilled.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "refrig-chilled-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": [
+                              {
+                                "name": "Should Select By Default",
+                                "codename": "should_select_by_default"
+                              }
+                            ]
+                          },
+                          "weight__value": {
+                            "value": 120
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 12
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-rf-refrig-chilled",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 5000
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      },
+                      {
+                        "system": {
+                          "id": "co-rf-refrig-frozen",
+                          "name": "Single-Zone Frozen",
+                          "codename": "rf_refrig_frozen",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Single-Zone Frozen"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Maintains -10 to 0°F for frozen goods delivery. Designed for frozen grocery and perishable transport for fleets such as Amazon Fresh, Whole Foods, HyVee, Kroger, Walmart, Target, and Kernel.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "/images/config/reefer-single-frozen.png",
+                                "description": "Single-Zone Frozen",
+                                "name": "Single-Zone Frozen.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "refrig-frozen-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": []
+                          },
+                          "weight__value": {
+                            "value": 130
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 12
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-rf-refrig-frozen",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 5500
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      },
+                      {
+                        "system": {
+                          "id": "co-rf-refrig-dualzone",
+                          "name": "Dual-Zone (Chilled + Frozen)",
+                          "codename": "rf_refrig_dualzone",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Dual-Zone (Chilled + Frozen)"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Independent chilled and frozen compartments with adjustable divider wall. Supports simultaneous fresh and frozen delivery for fleets such as Amazon Fresh, Whole Foods, HyVee, Kroger, Walmart, Target, and Kernel.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "/images/config/reefer-dual-zone.png",
+                                "description": "Dual-Zone",
+                                "name": "Dual-Zone.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "refrig-dualzone-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": []
+                          },
+                          "weight__value": {
+                            "value": 150
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 14
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-rf-refrig-dualzone",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 7500
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "system": {
+                  "id": "cs-rf-interior",
+                  "name": "Interior Shelving",
+                  "codename": "rf_interior",
+                  "type": "configuration_section"
+                },
+                "elements": {
+                  "title": {
+                    "value": "Interior Shelving"
+                  },
+                  "description": {
+                    "value": "Select interior shelving configuration for the insulated box body"
+                  },
+                  "configuration_option_category": {
+                    "value": []
+                  },
+                  "flags": {
+                    "value": [
+                      {
+                        "name": "Cannot Deselect",
+                        "codename": "cannot_deselect"
+                      }
+                    ]
+                  },
+                  "options": {
+                    "linkedItems": [
+                      {
+                        "system": {
+                          "id": "co-rf-shelving-none",
+                          "name": "No Shelving",
+                          "codename": "rf_shelving_none",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "No Shelving"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>No interior shelving. Empty insulated cargo area for custom racking or bulk storage.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": []
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": []
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": [
+                              {
+                                "name": "Interior Shelving",
+                                "codename": "interior_shelving"
+                              }
+                            ]
+                          },
+                          "flags": {
+                            "value": [
+                              {
+                                "name": "Should Select By Default",
+                                "codename": "should_select_by_default"
+                              }
+                            ]
+                          },
+                          "weight__value": {
+                            "value": 0
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 0
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-rf-shelving-none",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 0
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      },
+                      {
+                        "system": {
+                          "id": "co-rf-shelving-grocery",
+                          "name": "Grocery Delivery Shelving",
+                          "codename": "rf_shelving_grocery",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Grocery Delivery Shelving"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Adjustable shelving system for totes and bags. Designed for organized grocery delivery operations for fleets such as Amazon Fresh, Whole Foods, HyVee, Kroger, Walmart, Target, and Kernel.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "grocery-shelving.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "grocery-shelving-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": []
+                          },
+                          "weight__value": {
+                            "value": 50
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 10
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-rf-shelving-grocery",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 2000
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      },
+                      {
+                        "system": {
+                          "id": "co-rf-shelving-bulk",
+                          "name": "Bulk Storage (Open Floor)",
+                          "codename": "rf_shelving_bulk",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Bulk Storage (Open Floor)"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Open floor plan for pallet or bulk delivery. No shelving installed — maximizes cargo volume for large or palletized loads for fleets such as Amazon Fresh, Whole Foods, HyVee, Kroger, Walmart, Target, and Kernel.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "bulk-storage.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "bulk-storage-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": []
+                          },
+                          "weight__value": {
+                            "value": 0
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 10
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-rf-shelving-bulk",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 0
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "system": {
+                  "id": "cs-rf-paint",
+                  "name": "Paint",
+                  "codename": "rf_paint",
+                  "type": "configuration_section"
+                },
+                "elements": {
+                  "title": {
+                    "value": "Exterior Color"
+                  },
+                  "description": {
+                    "value": "Select exterior paint color"
+                  },
+                  "configuration_option_category": {
+                    "value": []
+                  },
+                  "flags": {
+                    "value": [
+                      {
+                        "name": "Cannot Deselect",
+                        "codename": "cannot_deselect"
+                      }
+                    ]
+                  },
+                  "options": {
+                    "linkedItems": [
+                      {
+                        "system": {
+                          "id": "co-rf-paint-white",
+                          "name": "White",
+                          "codename": "rf_paint_white",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "White (Standard)"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Standard white exterior finish. Included in base price.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "paint-white.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "paint-white-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": [
+                              {
+                                "name": "Included",
+                                "codename": "included"
+                              },
+                              {
+                                "name": "Should Select By Default",
+                                "codename": "should_select_by_default"
+                              }
+                            ]
+                          },
+                          "weight__value": {
+                            "value": 0
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 0
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-rf-paint-white",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 0
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      },
+                      {
+                        "system": {
+                          "id": "co-rf-paint-black",
+                          "name": "Black",
+                          "codename": "rf_paint_black",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Black"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Black exterior finish.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "paint-black.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "paint-black-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": []
+                          },
+                          "weight__value": {
+                            "value": 0
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 2
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-rf-paint-black",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 500
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      },
+                      {
+                        "system": {
+                          "id": "co-rf-paint-custom",
+                          "name": "Custom Color",
+                          "codename": "rf_paint_custom",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Custom Color"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Custom exterior color matched to customer specifications. Includes fleet branding color matching.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "paint-custom.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "paint-custom-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "EAVX",
+                                "codename": "eavx"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": []
+                          },
+                          "weight__value": {
+                            "value": 0
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 4
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-rf-paint-custom",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 1500
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "system": {
+                  "id": "cs-rf-charger",
+                  "name": "Charger",
+                  "codename": "rf_charger",
+                  "type": "configuration_section"
+                },
+                "elements": {
+                  "title": {
+                    "value": "Charger"
+                  },
+                  "description": {
+                    "value": "Select a charging solution for your vehicle"
+                  },
+                  "configuration_option_category": {
+                    "value": []
+                  },
+                  "flags": {
+                    "value": []
+                  },
+                  "options": {
+                    "linkedItems": [
+                      {
+                        "system": {
+                          "id": "co-rf-charger-l2",
+                          "name": "Level 2 AC Charger (7.2 kW)",
+                          "codename": "rf_charger_l2",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "Level 2 AC Charger (7.2 kW)"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>Standard Level 2 AC charging unit for overnight depot charging. Ideal for fleet operations with predictable schedules.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "charger-l2.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "charger-l2-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "ChargePoint",
+                                "codename": "chargepoint"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": []
+                          },
+                          "weight__value": {
+                            "value": 15
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 4
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-rf-charger-l2",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 800
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      },
+                      {
+                        "system": {
+                          "id": "co-rf-charger-dc",
+                          "name": "DC Fast Charger (50 kW)",
+                          "codename": "rf_charger_dc",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "value": "DC Fast Charger (50 kW)"
+                          },
+                          "customization_option_basic_details__description": {
+                            "value": "<p>DC fast charging unit enabling rapid charging at commercial depots. 80% charge in under 1 hour.</p>"
+                          },
+                          "customization_option_basic_details__image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "charger-dc.png"
+                              }
+                            ]
+                          },
+                          "customization_option_basic_details__option_image": {
+                            "value": [
+                              {
+                                "url": "",
+                                "name": "charger-dc-thumb.png"
+                              }
+                            ]
+                          },
+                          "manufacturer": {
+                            "value": [
+                              {
+                                "name": "ChargePoint",
+                                "codename": "chargepoint"
+                              }
+                            ]
+                          },
+                          "receiver": {
+                            "value": ""
+                          },
+                          "option_category": {
+                            "value": []
+                          },
+                          "flags": {
+                            "value": []
+                          },
+                          "weight__value": {
+                            "value": 45
+                          },
+                          "weight__weight_unit": {
+                            "value": [
+                              {
+                                "name": "lbs",
+                                "codename": "lbs"
+                              }
+                            ]
+                          },
+                          "leadtime__value": {
+                            "value": 6
+                          },
+                          "leadtime__leadtime_unit": {
+                            "value": [
+                              {
+                                "name": "week",
+                                "codename": "week"
+                              }
+                            ]
+                          },
+                          "price_1cad98a": {
+                            "linkedItems": [
+                              {
+                                "system": {
+                                  "id": "p-rf-charger-dc",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "value": [
+                                      {
+                                        "name": "$",
+                                        "codename": "usd"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "value": 3500
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "additional_specifications": {
+                            "linkedItems": []
+                          },
+                          "paint_options": {
+                            "linkedItems": []
+                          },
+                          "model_3d": {
+                            "value": []
+                          },
+                          "documents": {
+                            "linkedItems": []
+                          },
+                          "configuration_sections": {
+                            "linkedItems": []
+                          },
+                          "type": {
+                            "value": []
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "chargers": {
+            "linkedItems": []
+          },
+          "powertrain": {
+            "linkedItems": []
+          },
+          "upfits": {
+            "linkedItems": []
+          },
+          "untitled_linked_items": {
+            "linkedItems": []
+          }
+        }
+      }
+    ]
+  }
+}

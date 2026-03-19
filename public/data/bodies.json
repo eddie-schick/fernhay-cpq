@@ -1,0 +1,54 @@
+[
+  {
+    "id": "body-standard-box",
+    "bodyType": "Standard Box",
+    "variantName": "Standard Box Body",
+    "manufacturer": "EAVX",
+    "compatibleChassis": ["eAV Cutaway Chassis"],
+    "basePrice": 5000,
+    "leadTime": 8,
+    "weight": { "value": 250, "unit": "lbs" },
+    "status": "Active",
+    "lastUpdated": "2026-01-15",
+    "description": "Aluminum box body for package delivery and general cargo. Roll-up or swing door configurations available."
+  },
+  {
+    "id": "body-climate-conditioned",
+    "bodyType": "Climate Conditioned",
+    "variantName": "Insulated Box Body",
+    "manufacturer": "EAVX",
+    "compatibleChassis": ["eAV Cutaway Chassis"],
+    "basePrice": 9000,
+    "leadTime": 10,
+    "weight": { "value": 350, "unit": "lbs" },
+    "status": "Active",
+    "lastUpdated": "2026-01-15",
+    "description": "Insulated box body with refrigeration unit for temperature-controlled delivery. Chilled and frozen zones available."
+  },
+  {
+    "id": "body-flat-bed",
+    "bodyType": "Flat Bed",
+    "variantName": "Pickup Style (Open Bed)",
+    "manufacturer": "EAVX",
+    "compatibleChassis": ["eAV Cutaway Chassis"],
+    "basePrice": 2000,
+    "leadTime": 6,
+    "weight": { "value": 180, "unit": "lbs" },
+    "status": "Active",
+    "lastUpdated": "2026-01-15",
+    "description": "Open flat bed platform for municipal, utility, and campus operations. Supports modular accessories."
+  },
+  {
+    "id": "body-kiosk",
+    "bodyType": "Kiosk",
+    "variantName": "Kiosk Body with Serving Window",
+    "manufacturer": "EAVX",
+    "compatibleChassis": ["eAV Cutaway Chassis"],
+    "basePrice": 6000,
+    "leadTime": 12,
+    "weight": { "value": 300, "unit": "lbs" },
+    "status": "Active",
+    "lastUpdated": "2026-01-15",
+    "description": "Mobile retail kiosk body with fold-out serving windows. Ideal for café, vending, and mobile commerce."
+  }
+]

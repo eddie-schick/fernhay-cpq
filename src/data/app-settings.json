@@ -1,0 +1,32 @@
+{
+  "system": {
+    "id": "app-settings-fernhay-001",
+    "name": "Fernhay App Settings",
+    "codename": "fernhay_app_settings",
+    "type": "app_settings",
+    "collection": "fernhay",
+    "language": "default"
+  },
+  "elements": {
+    "name": { "value": "Fernhay" },
+    "logo_png": { "value": [{ "url": "/logos/fernhay-logo.jpeg", "name": "fernhay-logo.jpeg", "type": "image/jpeg", "size": 0 }] },
+    "logo_svg": { "value": [{ "url": "/logos/fernhay-logo.jpeg", "name": "fernhay-logo.jpeg" }] },
+    "header_logo_png": { "value": [{ "url": "/logos/fernhay-logo.jpeg", "name": "fernhay-logo.jpeg" }] },
+    "header_logo_svg": { "value": [{ "url": "/logos/fernhay-logo.jpeg", "name": "fernhay-logo.jpeg" }] },
+    "login_banner_image_png": { "value": [{ "url": "/logos/fernhay-login-image.png", "name": "fernhay-login-image.png" }] },
+    "login_banner_image_svg": { "value": [{ "url": "/logos/fernhay-login-image.png", "name": "fernhay-login-image.png" }] },
+    "sidebar_logo_png": { "value": [{ "url": "/logos/fernhay-logo.jpeg", "name": "fernhay-logo.jpeg" }] },
+    "sidebar_logo_svg": { "value": [{ "url": "/logos/fernhay-logo.jpeg", "name": "fernhay-logo.jpeg" }] },
+    "splash_screen_logo_png": { "value": [{ "url": "/logos/fernhay-logo.jpeg", "name": "fernhay-logo.jpeg" }] },
+    "splash_screen_logo_svg": { "value": [{ "url": "/logos/fernhay-logo.jpeg", "name": "fernhay-logo.jpeg" }] },
+    "primary_color": { "value": "#1E3A5F" },
+    "primary_hover_color": { "value": "#162D4A" },
+    "secondary_color": { "value": "#5BC4F1" },
+    "nav_link_active_color": { "value": "#5BC4F1" },
+    "misc_active_color": { "value": "#5BC4F1" },
+    "splash_screen_loader_color_1": { "value": "#1E3A5F" },
+    "splash_screen_loader_color_2": { "value": "#5BC4F1" },
+    "splash_screen_loader_color_3": { "value": "#2C4F7A" },
+    "flags": { "value": [] }
+  }
+}

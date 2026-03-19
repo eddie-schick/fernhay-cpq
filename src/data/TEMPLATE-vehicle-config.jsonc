@@ -1,0 +1,578 @@
+{
+  "_comment": "=== SINGLE VEHICLE CONFIG TEMPLATE (depth=6 expansion) ===",
+  "_comment_usage": "This replaces the getSingleVehicle() Kontent call in store/endpoints/vehicles/vehicles.ts",
+  "_comment_api_call": "kontentAiDeliveryClient.items<Vehicle>().equalsFilter('system.id', vehicleId).depthParameter(6)",
+  "_comment_note": "Create one of these files per vehicle. The code reads: response.data.items[0]",
+  "_comment_consumed_by": "configurator-page-provider.tsx reads elements.configuration_sections to build the configurator UI",
+  "_comment_filename": "Name these like: vehicle-config-fernhay-eav.json, vehicle-config-fernhay-paxster.json, etc.",
+
+  "data": {
+    "items": [
+      {
+        "system": {
+          "id": "FILL_IN: must match the vehicle ID from TEMPLATE-vehicles.jsonc",
+          "name": "FILL_IN: e.g. 'Fernhay eAV'",
+          "codename": "FILL_IN: e.g. 'fernhay_eav'",
+          "type": "vehicle",
+          "collection": "fernhay",
+          "language": "default"
+        },
+
+        "elements": {
+          "make": {
+            "_type": "TaxonomyElement<VehicleMake>",
+            "_required": true,
+            "value": [{ "name": "FILL_IN: e.g. 'Fernhay'", "codename": "FILL_IN" }]
+          },
+
+          "model": {
+            "_type": "TaxonomyElement<VehicleModel>",
+            "_required": true,
+            "value": [{ "name": "FILL_IN: e.g. 'eAV'", "codename": "FILL_IN" }]
+          },
+
+          "description": {
+            "_type": "RichTextElement",
+            "_required": false,
+            "value": "FILL_IN: HTML string"
+          },
+
+          "image": {
+            "_type": "AssetsElement",
+            "_required": false,
+            "value": [{ "url": "FILL_IN", "name": "FILL_IN" }]
+          },
+
+          "flags_384b6cf": {
+            "_type": "MultipleChoiceElement",
+            "value": [
+              { "name": "Enable Build", "codename": "enable_build" }
+            ]
+          },
+
+          "gvwr__gvwr_unit": {
+            "_type": "MultipleChoiceElement",
+            "_required": true,
+            "value": [{ "name": "FILL_IN: lbs or kg", "codename": "FILL_IN" }]
+          },
+
+          "gvwr__gvwr_value": {
+            "_type": "NumberElement",
+            "_required": true,
+            "value": "FILL_IN: number"
+          },
+
+          "vocation": {
+            "_comment": "Vehicle vocation/purpose — taxonomy",
+            "_type": "TaxonomyElement<Vocation>",
+            "_required": false,
+            "_known_values": ["construction_maintenance", "industrial_services", "package_delivery", "utility_services"],
+            "value": [{ "name": "FILL_IN", "codename": "FILL_IN" }]
+          },
+
+          "configuration_sections": {
+            "_comment": "=== THIS IS THE CORE OF THE CONFIGURATOR ===",
+            "_comment2": "Each section becomes a tab/group in the configurator UI. Options within each section are the selectable choices.",
+            "_comment3": "configurator-page-provider.tsx iterates these recursively — options can have sub-configuration_sections (nested sections).",
+            "_type": "LinkedItemsElement<ConfigurationSection>",
+            "_required": false,
+            "linkedItems": [
+
+              {
+                "_comment": "=== CONFIGURATION SECTION — repeat for each section (e.g. 'Chassis', 'Upfit', 'Battery', etc.) ===",
+                "system": {
+                  "id": "FILL_IN: UUID",
+                  "name": "FILL_IN: e.g. 'Chassis Selection'",
+                  "codename": "FILL_IN: e.g. 'chassis_selection'",
+                  "type": "configuration_section"
+                },
+                "elements": {
+                  "title": {
+                    "_comment": "Section title shown in the configurator tabs",
+                    "_type": "TextElement",
+                    "_required": true,
+                    "value": "FILL_IN: e.g. 'Chassis'"
+                  },
+
+                  "description": {
+                    "_comment": "Section description shown below the title",
+                    "_type": "TextElement",
+                    "_required": false,
+                    "value": "FILL_IN: e.g. 'Select your chassis type'"
+                  },
+
+                  "configuration_option_category": {
+                    "_comment": "Taxonomy for categorizing this section",
+                    "_type": "TaxonomyElement<ConfigurationOptionCategory>",
+                    "_required": false,
+                    "value": [{ "name": "FILL_IN", "codename": "FILL_IN" }]
+                  },
+
+                  "flags": {
+                    "_comment": "Section behavior flags. Checked by name in configurator-page-provider.tsx.",
+                    "_type": "MultipleChoiceElement",
+                    "_required": false,
+                    "_known_values": [
+                      "'Allow Multiselect' — user can select multiple options in this section",
+                      "'Cannot Deselect' — at least one option must remain selected",
+                      "'Is part of Base MSRP' — price is included in base vehicle price, not additive",
+                      "'Hide Section' — section exists in data but is not shown in UI"
+                    ],
+                    "value": [
+                      { "name": "Cannot Deselect", "codename": "cannot_deselect" }
+                    ]
+                  },
+
+                  "options": {
+                    "_comment": "=== THE SELECTABLE OPTIONS WITHIN THIS SECTION ===",
+                    "_type": "LinkedItemsElement<ConfigurationOption>",
+                    "_required": false,
+                    "linkedItems": [
+
+                      {
+                        "_comment": "=== CONFIGURATION OPTION — repeat for each selectable option ===",
+                        "system": {
+                          "id": "FILL_IN: UUID — used as the option ID",
+                          "name": "FILL_IN: e.g. 'W56 Strip Chassis'",
+                          "codename": "FILL_IN: e.g. 'w56_strip_chassis' — stored as kontentAi__item__codename",
+                          "type": "configuration_option"
+                        },
+                        "elements": {
+                          "customization_option_basic_details__title": {
+                            "_comment": "Display title of this option",
+                            "_type": "TextElement",
+                            "_required": false,
+                            "value": "FILL_IN: e.g. 'W56 Strip Chassis'"
+                          },
+
+                          "customization_option_basic_details__description": {
+                            "_comment": "Rich text description of this option — can contain HTML",
+                            "_type": "RichTextElement",
+                            "_required": false,
+                            "value": "FILL_IN: HTML string, e.g. '<p>Base chassis platform for the eAV.</p>'"
+                          },
+
+                          "customization_option_basic_details__image": {
+                            "_comment": "Main image(s) for this option. First image shown as primary. All images available as additional_images.",
+                            "_type": "AssetsElement",
+                            "_required": false,
+                            "value": [
+                              {
+                                "url": "FILL_IN: URL to option image (re-host from Kontent CDN)",
+                                "name": "FILL_IN: e.g. 'w56-strip-chassis.png'"
+                              }
+                            ]
+                          },
+
+                          "customization_option_basic_details__option_image": {
+                            "_comment": "Thumbnail/icon image for option selection UI (smaller than main image)",
+                            "_type": "AssetsElement",
+                            "_required": false,
+                            "value": [
+                              {
+                                "url": "FILL_IN: URL to option thumbnail",
+                                "name": "FILL_IN"
+                              }
+                            ]
+                          },
+
+                          "manufacturer": {
+                            "_comment": "Component manufacturer — taxonomy",
+                            "_type": "TaxonomyElement<Manufacturer>",
+                            "_required": false,
+                            "value": [{ "name": "FILL_IN: e.g. 'Workhorse'", "codename": "FILL_IN" }]
+                          },
+
+                          "receiver": {
+                            "_comment": "Receiver info — plain text field",
+                            "_type": "TextElement",
+                            "_required": false,
+                            "value": "FILL_IN or leave empty string"
+                          },
+
+                          "option_category": {
+                            "_comment": "Category taxonomy for this option type",
+                            "_type": "TaxonomyElement<ConfigurationOptionCategory>",
+                            "_required": false,
+                            "value": [{ "name": "FILL_IN", "codename": "FILL_IN" }]
+                          },
+
+                          "flags": {
+                            "_comment": "Option behavior flags. Checked by name in configurator-page-provider.tsx.",
+                            "_type": "MultipleChoiceElement",
+                            "_required": false,
+                            "_known_values": [
+                              "'Included' — option is included in base price (no extra cost)",
+                              "'Should Select By Default' — option is pre-selected when configurator loads",
+                              "'Hide Details' — don't show detail panel for this option",
+                              "'prioritize_3d_model' — use this option's 3D model as the main vehicle model (checked by codename, not name)"
+                            ],
+                            "value": [
+                              { "name": "Included", "codename": "included" },
+                              { "name": "Should Select By Default", "codename": "should_select_by_default" }
+                            ]
+                          },
+
+                          "weight__value": {
+                            "_comment": "Weight of this component in numeric value",
+                            "_type": "NumberElement",
+                            "_required": true,
+                            "value": "FILL_IN: number, e.g. 500"
+                          },
+
+                          "weight__weight_unit": {
+                            "_comment": "Weight unit",
+                            "_type": "MultipleChoiceElement",
+                            "_required": true,
+                            "value": [{ "name": "FILL_IN: 'lbs' or 'kg'", "codename": "FILL_IN" }]
+                          },
+
+                          "leadtime__value": {
+                            "_comment": "Lead time for this option (numeric)",
+                            "_type": "NumberElement",
+                            "_required": false,
+                            "value": "FILL_IN: number, e.g. 14"
+                          },
+
+                          "leadtime__leadtime_unit": {
+                            "_comment": "Lead time unit",
+                            "_type": "MultipleChoiceElement",
+                            "_required": true,
+                            "value": [{ "name": "FILL_IN: 'day' or 'week'", "codename": "FILL_IN" }]
+                          },
+
+                          "price_1cad98a": {
+                            "_comment": "=== PRICING — PER-DEALER MODEL ===",
+                            "_comment2": "This is a linked items field containing Price items. Each Price has an 'entity' field that is either 'default' or a dealer's email address.",
+                            "_comment3": "The code finds price matching user's email first, falls back to 'default'. See configurator-page-provider.tsx:150-157",
+                            "_type": "LinkedItemsElement (treated as RichTextElement in type but resolved as linked items at runtime)",
+                            "_required": false,
+                            "linkedItems": [
+                              {
+                                "_comment": "Default price — used when no dealer-specific price exists",
+                                "system": {
+                                  "id": "FILL_IN: UUID",
+                                  "codename": "FILL_IN",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "_comment": "'default' for base price, or 'dealer@email.com' for dealer-specific pricing",
+                                    "_type": "TextElement",
+                                    "value": "default"
+                                  },
+                                  "unit": {
+                                    "_comment": "Currency unit",
+                                    "_type": "MultipleChoiceElement",
+                                    "value": [{ "name": "$", "codename": "usd" }]
+                                  },
+                                  "value": {
+                                    "_comment": "Price amount",
+                                    "_type": "NumberElement",
+                                    "value": "FILL_IN: number, e.g. 15000"
+                                  }
+                                }
+                              },
+                              {
+                                "_comment": "OPTIONAL: Dealer-specific price — repeat for each dealer who gets custom pricing",
+                                "system": {
+                                  "id": "FILL_IN: UUID",
+                                  "codename": "FILL_IN",
+                                  "type": "price_5737012"
+                                },
+                                "elements": {
+                                  "entity": {
+                                    "_comment": "Dealer's email address — matched against logged-in user's email",
+                                    "value": "FILL_IN: e.g. 'dealer@fernhay.com'"
+                                  },
+                                  "unit": {
+                                    "value": [{ "name": "$", "codename": "usd" }]
+                                  },
+                                  "value": {
+                                    "value": "FILL_IN: dealer-specific price number"
+                                  }
+                                }
+                              }
+                            ]
+                          },
+
+                          "additional_specifications": {
+                            "_comment": "Additional specs — rich text linked items. Each has title + value.",
+                            "_type": "RichTextElement (resolved as linked items: ProductSpecifications[])",
+                            "_required": false,
+                            "linkedItems": [
+                              {
+                                "system": { "id": "FILL_IN", "type": "product_specifications" },
+                                "elements": {
+                                  "title": {
+                                    "_comment": "Spec label, e.g. 'Input Voltage'",
+                                    "value": "FILL_IN"
+                                  },
+                                  "value": {
+                                    "_comment": "Spec value, e.g. '120V AC'",
+                                    "value": "FILL_IN"
+                                  }
+                                }
+                              }
+                            ]
+                          },
+
+                          "paint_options": {
+                            "_comment": "=== PAINT COLORS AVAILABLE FOR THIS OPTION ===",
+                            "_comment2": "Only applicable for chassis/upfit options. The selected chassis/upfit determines available paint colors.",
+                            "_comment3": "See configurator-page-provider.tsx:358-367 — paintTypeOptions derived from selectedUpfit || selectedChassis",
+                            "_type": "LinkedItemsElement<Paint>",
+                            "_required": false,
+                            "linkedItems": [
+                              {
+                                "_comment": "=== PAINT OPTION — repeat for each available color ===",
+                                "system": {
+                                  "id": "FILL_IN: UUID",
+                                  "codename": "FILL_IN: e.g. 'white_pearl' — stored as kontentAi__item__codename",
+                                  "type": "vehicle_paint"
+                                },
+                                "elements": {
+                                  "name": {
+                                    "_comment": "Color display name, e.g. 'White', 'Black', 'Blue'",
+                                    "_type": "TextElement",
+                                    "value": "FILL_IN"
+                                  },
+                                  "color_code": {
+                                    "_comment": "Hex color code for the color picker swatch, e.g. '#FFFFFF'",
+                                    "_type": "TextElement",
+                                    "_required": true,
+                                    "value": "FILL_IN: e.g. '#FFFFFF'"
+                                  },
+                                  "flags": {
+                                    "_comment": "'Included' means this color is at no extra cost",
+                                    "_type": "MultipleChoiceElement",
+                                    "value": [{ "name": "Included", "codename": "included" }]
+                                  },
+                                  "price_dcef68c": {
+                                    "_comment": "Paint color price — same per-dealer structure as option price",
+                                    "_type": "LinkedItemsElement (price items)",
+                                    "linkedItems": [
+                                      {
+                                        "system": { "id": "FILL_IN", "type": "price_5737012" },
+                                        "elements": {
+                                          "entity": { "value": "default" },
+                                          "unit": { "value": [{ "name": "$", "codename": "usd" }] },
+                                          "value": { "value": "FILL_IN: number, 0 if included" }
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              }
+                            ]
+                          },
+
+                          "model_3d": {
+                            "_comment": "=== 3D MODEL FILE ===",
+                            "_comment2": "GLB/GLTF file used by React Three Fiber for 3D vehicle visualization",
+                            "_comment3": "If flag 'prioritize_3d_model' is set, this model replaces the vehicle's default 3D model",
+                            "_type": "AssetsElement",
+                            "_required": false,
+                            "value": [
+                              {
+                                "url": "FILL_IN: URL to .glb file (re-host from Kontent CDN)",
+                                "name": "FILL_IN: e.g. 'W56 Chassis Final.glb'"
+                              }
+                            ]
+                          },
+
+                          "documents": {
+                            "_comment": "=== SPEC SHEETS AND DOCUMENTS ===",
+                            "_type": "LinkedItemsElement<Documents>",
+                            "_required": false,
+                            "linkedItems": [
+                              {
+                                "system": { "id": "FILL_IN", "type": "vehicle_documents" },
+                                "elements": {
+                                  "spec_sheet": {
+                                    "_comment": "PDF spec sheet — shown as downloadable link in configurator",
+                                    "_type": "AssetsElement",
+                                    "value": [
+                                      {
+                                        "url": "FILL_IN: URL to spec sheet PDF (re-host)",
+                                        "name": "FILL_IN: e.g. 'W56-Chassis-Spec-Sheet.pdf'"
+                                      }
+                                    ]
+                                  },
+                                  "warranty_specification": {
+                                    "_type": "AssetsElement",
+                                    "_required": false,
+                                    "value": []
+                                  },
+                                  "window_sticker": {
+                                    "_type": "AssetsElement",
+                                    "_required": false,
+                                    "value": []
+                                  }
+                                }
+                              }
+                            ]
+                          },
+
+                          "configuration_sections": {
+                            "_comment": "=== NESTED SUB-SECTIONS (RECURSIVE) ===",
+                            "_comment2": "An option can have its own configuration sections. This creates a tree structure.",
+                            "_comment3": "Example: selecting a chassis reveals sub-sections for 'Shelving' or 'Accessories' specific to that chassis.",
+                            "_comment4": "configurator-page-provider.tsx handles this recursively in the addSections() function at line 89.",
+                            "_type": "LinkedItemsElement<ConfigurationSection>",
+                            "_required": false,
+                            "linkedItems": [
+                              {
+                                "_comment": "SUB-SECTION — same structure as top-level configuration_section above. Nest as deep as needed.",
+                                "system": {
+                                  "id": "FILL_IN: UUID",
+                                  "codename": "FILL_IN",
+                                  "type": "configuration_section"
+                                },
+                                "elements": {
+                                  "title": { "value": "FILL_IN: e.g. 'Shelving Options'" },
+                                  "description": { "value": "FILL_IN" },
+                                  "flags": { "value": [] },
+                                  "configuration_option_category": { "value": [] },
+                                  "options": {
+                                    "linkedItems": [
+                                      {
+                                        "_comment": "Sub-option — same full structure as parent option above",
+                                        "system": { "id": "FILL_IN", "codename": "FILL_IN", "type": "configuration_option" },
+                                        "elements": {
+                                          "customization_option_basic_details__title": { "value": "FILL_IN" },
+                                          "customization_option_basic_details__description": { "value": "FILL_IN" },
+                                          "customization_option_basic_details__image": { "value": [] },
+                                          "customization_option_basic_details__option_image": { "value": [] },
+                                          "flags": { "value": [] },
+                                          "weight__value": { "value": 0 },
+                                          "weight__weight_unit": { "value": [{ "name": "lbs", "codename": "lbs" }] },
+                                          "leadtime__value": { "value": 0 },
+                                          "leadtime__leadtime_unit": { "value": [{ "name": "day", "codename": "day" }] },
+                                          "price_1cad98a": { "linkedItems": [] },
+                                          "model_3d": { "value": [] },
+                                          "documents": { "linkedItems": [] },
+                                          "paint_options": { "linkedItems": [] },
+                                          "manufacturer": { "value": [] },
+                                          "receiver": { "value": "" },
+                                          "option_category": { "value": [] },
+                                          "additional_specifications": { "linkedItems": [] },
+                                          "configuration_sections": { "linkedItems": [] }
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              }
+                            ]
+                          },
+
+                          "type": {
+                            "_comment": "Chassis type taxonomy — only used on chassis-type options (ConfigurationOption includes this via ChassisType taxonomy)",
+                            "_type": "TaxonomyElement<ChassisType>",
+                            "_required": false,
+                            "value": []
+                          }
+                        }
+                      }
+
+                    ]
+                  }
+                },
+
+                "chargers": {
+                  "_comment": "=== CHARGER OPTIONS ===",
+                  "_comment2": "Only shown if vehicle flag 'Show Chargers' is set",
+                  "_type": "LinkedItemsElement<Charger>",
+                  "_required": false,
+                  "linkedItems": [
+                    {
+                      "_comment": "=== CHARGER — repeat for each charger option ===",
+                      "system": {
+                        "id": "FILL_IN: UUID",
+                        "codename": "FILL_IN",
+                        "type": "charger"
+                      },
+                      "elements": {
+                        "customization_option_basic_details__title": { "value": "FILL_IN: e.g. 'Level 2 Charger'" },
+                        "customization_option_basic_details__description": { "value": "FILL_IN: HTML" },
+                        "customization_option_basic_details__image": {
+                          "value": [{ "url": "FILL_IN", "name": "FILL_IN" }]
+                        },
+                        "customization_option_basic_details__option_image": { "value": [] },
+                        "additional_specs": {
+                          "_comment": "Charger-specific additional specs (rich text / linked ProductSpecifications)",
+                          "value": "FILL_IN: HTML or empty string",
+                          "linkedItems": []
+                        },
+                        "manufacturer": { "value": [{ "name": "FILL_IN", "codename": "FILL_IN" }] },
+                        "price_c3ed960": {
+                          "_comment": "Charger price — same per-dealer linked items structure",
+                          "linkedItems": [
+                            {
+                              "system": { "id": "FILL_IN", "type": "price_5737012" },
+                              "elements": {
+                                "entity": { "value": "default" },
+                                "unit": { "value": [{ "name": "$", "codename": "usd" }] },
+                                "value": { "value": "FILL_IN: number" }
+                              }
+                            }
+                          ]
+                        },
+                        "documents": { "linkedItems": [] },
+                        "flags": { "value": [] },
+                        "weight__value": { "value": "FILL_IN: number" },
+                        "weight__weight_unit": { "value": [{ "name": "lbs", "codename": "lbs" }] },
+                        "leadtime__value": { "value": "FILL_IN: number" },
+                        "leadtime__leadtime_unit": { "value": [{ "name": "day", "codename": "day" }] }
+                      }
+                    }
+                  ]
+                },
+
+                "powertrain": {
+                  "_comment": "=== POWERTRAIN / BATTERY OPTIONS ===",
+                  "_type": "LinkedItemsElement<Powertrain>",
+                  "_required": false,
+                  "linkedItems": [
+                    {
+                      "system": { "id": "FILL_IN", "codename": "FILL_IN", "type": "powertrain" },
+                      "elements": {
+                        "customization_option_basic_details__title": { "value": "FILL_IN" },
+                        "customization_option_basic_details__description": { "value": "FILL_IN" },
+                        "customization_option_basic_details__image": { "value": [] },
+                        "customization_option_basic_details__option_image": { "value": [] },
+                        "additional_specifications": { "value": "", "linkedItems": [] },
+                        "flags": { "value": [] },
+                        "price_cc4a06b": { "linkedItems": [] },
+                        "weight__value": { "value": 0 },
+                        "weight__weight_unit": { "value": [{ "name": "lbs", "codename": "lbs" }] },
+                        "leadtime__value": { "value": 0 },
+                        "leadtime__leadtime_unit": { "value": [{ "name": "day", "codename": "day" }] }
+                      }
+                    }
+                  ]
+                },
+
+                "upfits": {
+                  "_comment": "=== UPFIT OPTIONS (top-level, separate from config sections) ===",
+                  "_type": "LinkedItemsElement<Upfit>",
+                  "_required": false,
+                  "linkedItems": []
+                },
+
+                "untitled_linked_items": {
+                  "_comment": "=== CHASSIS OPTIONS (top-level, separate from config sections) ===",
+                  "_comment2": "Yes, this field is literally named 'untitled_linked_items' in Kontent — it maps to Chassis[]",
+                  "_type": "LinkedItemsElement<Chassis>",
+                  "_required": false,
+                  "linkedItems": []
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

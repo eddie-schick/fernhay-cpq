@@ -1,0 +1,67 @@
+declare global {
+  interface ImportMetaEnv {
+    VITE_APP_NAME: string;
+    VITE_MUI_DATAGRID_PRO_LICENSE_KEY: string;
+    VITE_BASE_URL: string;
+    VITE_BACKEND_URL: string;
+    VITE_MICROSOFT_SSO: string;
+    VITE_GOOGLE_SSO: string;
+    VITE_SSO_FAILTURE_URI: string;
+    VITE_SSO_SUCCESS_URI: string;
+    VITE_AUTH_SERVICE_URI: string;
+    VITE_AUTH_SERVICE_API_KEY: string;
+    VITE_GET_SIGNED_URL_CLOUD_FUNCTION_ENVIRONMENT: string;
+    VITE_IS_PUSH_TO_MARKETPLACE_ENABLED: string;
+    VITE_PUSH_TO_CEV_SUCCESS_REDIRECT_LINK: string;
+
+    // Misc
+    VITE_GOOGLE_MAPS_API_KEY: string;
+    VITE_HUBSPOT_ID: string;
+
+    // Datadog
+    VITE_DATADOG_RUM_APPLICATION_ID: string;
+    VITE_DATADOG_RUM_CLIENT_TOKEN: string;
+    VITE_DATADOG_RUM_ENV: string;
+    VITE_DATADOG_RUM_SERVICE: string;
+    VITE_DATADOG_RUM_VERSION: string;
+    VITE_DATADOG_API_KEY: string;
+    VITE_DATADOG_APPLICATION_KEY: string;
+    VITE_DATADOG_API_SITE: string;
+    VITE_ENVIRONMENT: string;
+  }
+}
+
+const Envs = {
+  APP_NAME: import.meta.env.VITE_APP_NAME,
+  MUI_GRID_LICENSE_KEY: import.meta.env.VITE_MUI_DATAGRID_PRO_LICENSE_KEY,
+
+  GET_SIGNED_URL_CLOUD_FUNCTION_ENVIRONMENT: import.meta.env
+    .VITE_GET_SIGNED_URL_CLOUD_FUNCTION_ENVIRONMENT,
+  BACKEND_URL: import.meta.env.VITE_BACKEND_URL,
+
+  // Misc
+  GOOGLE_MAPS_API_KEY: import.meta.env.VITE_GOOGLE_MAPS_API_KEY,
+  HUBSPOT_ID: import.meta.env.VITE_HUBSPOT_ID,
+  IS_PUSH_TO_MARKETPLACE_ENABLED: (() => {
+    try {
+      return JSON.parse(import.meta.env.VITE_IS_PUSH_TO_MARKETPLACE_ENABLED || "false") as boolean;
+    } catch {
+      return false;
+    }
+  })(),
+  PUSH_TO_CEV_SUCCESS_REDIRECT_LINK: import.meta.env
+    .VITE_PUSH_TO_CEV_SUCCESS_REDIRECT_LINK,
+  ENVIRONMENT: import.meta.env.VITE_ENVIRONMENT,
+
+  // Datadog envs
+  DATADOG_RUM_APPLICATION_ID: import.meta.env.VITE_DATADOG_RUM_APPLICATION_ID,
+  DATADOG_RUM_CLIENT_TOKEN: import.meta.env.VITE_DATADOG_RUM_CLIENT_TOKEN,
+  DATADOG_RUM_ENV: import.meta.env.VITE_DATADOG_RUM_ENV,
+  DATADOG_RUM_SERVICE: import.meta.env.VITE_DATADOG_RUM_SERVICE,
+  DATADOG_RUM_VERSION: import.meta.env.VITE_DATADOG_RUM_VERSION,
+  DATADOG_API_KEY: import.meta.env.VITE_DATADOG_API_KEY,
+  DATADOG_APPLICATION_KEY: import.meta.env.VITE_DATADOG_APPLICATION_KEY,
+  DATADOG_API_SITE: import.meta.env.VITE_DATADOG_API_SITE,
+} as const;
+
+export default Envs;

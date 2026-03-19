@@ -1,0 +1,200 @@
+{
+  "_comment": "=== APP SETTINGS TEMPLATE ===",
+  "_comment_usage": "This replaces the getAppSettings() Kontent call in store/endpoints/misc/misc.ts",
+  "_comment_content_type": "Kontent content type: app_settings (codename: app_settings)",
+  "_comment_api_call": "kontentAiDeliveryClient.items<AppSettings>().equalsFilter('system.type', 'app_settings')",
+
+  "system": {
+    "_comment": "Kontent system fields — used for item identity",
+    "id": "FILL_IN: unique ID string (e.g. UUID)",
+    "name": "FILL_IN: display name (e.g. 'Fernhay App Settings')",
+    "codename": "FILL_IN: e.g. 'fernhay_app_settings'",
+    "type": "app_settings",
+    "collection": "fernhay",
+    "language": "default"
+  },
+
+  "elements": {
+    "name": {
+      "_comment": "App name — used for branding, event logging, display",
+      "_type": "TextElement",
+      "_required": false,
+      "value": "FILL_IN: e.g. 'Fernhay'"
+    },
+
+    "logo_png": {
+      "_comment": "Main logo (PNG format) — used in BOM PDFs, general branding",
+      "_type": "AssetsElement",
+      "value": [
+        {
+          "url": "FILL_IN: URL to PNG logo (host these yourself — Kontent CDN will be dead)",
+          "name": "FILL_IN: e.g. 'fernhay-logo.png'",
+          "type": "image/png",
+          "size": 0
+        }
+      ]
+    },
+
+    "logo_svg": {
+      "_comment": "Main logo (SVG format) — preferred over PNG where supported",
+      "_type": "AssetsElement",
+      "value": [
+        {
+          "url": "FILL_IN: URL to SVG logo",
+          "name": "FILL_IN: e.g. 'fernhay-logo.svg'"
+        }
+      ]
+    },
+
+    "header_logo_png": {
+      "_comment": "Logo shown in the app header bar (PNG)",
+      "_type": "AssetsElement",
+      "value": [
+        {
+          "url": "FILL_IN: URL to header logo PNG",
+          "name": "FILL_IN: e.g. 'fernhay-header-logo.png'"
+        }
+      ]
+    },
+
+    "header_logo_svg": {
+      "_comment": "Logo shown in the app header bar (SVG)",
+      "_type": "AssetsElement",
+      "value": [
+        {
+          "url": "FILL_IN: URL to header logo SVG",
+          "name": "FILL_IN: e.g. 'fernhay-header-logo.svg'"
+        }
+      ]
+    },
+
+    "login_banner_image_png": {
+      "_comment": "Large banner image on the login/signup page (PNG)",
+      "_type": "AssetsElement",
+      "value": [
+        {
+          "url": "FILL_IN: URL to login banner PNG",
+          "name": "FILL_IN: e.g. 'fernhay-login-banner.png'"
+        }
+      ]
+    },
+
+    "login_banner_image_svg": {
+      "_comment": "Large banner image on the login/signup page (SVG)",
+      "_type": "AssetsElement",
+      "value": [
+        {
+          "url": "FILL_IN: URL to login banner SVG",
+          "name": "FILL_IN: e.g. 'fernhay-login-banner.svg'"
+        }
+      ]
+    },
+
+    "sidebar_logo_png": {
+      "_comment": "Small logo shown in the left sidebar navigation (PNG)",
+      "_type": "AssetsElement",
+      "value": [
+        {
+          "url": "FILL_IN: URL to sidebar logo PNG",
+          "name": "FILL_IN: e.g. 'fernhay-sidebar-logo.png'"
+        }
+      ]
+    },
+
+    "sidebar_logo_svg": {
+      "_comment": "Small logo shown in the left sidebar navigation (SVG)",
+      "_type": "AssetsElement",
+      "value": [
+        {
+          "url": "FILL_IN: URL to sidebar logo SVG",
+          "name": "FILL_IN: e.g. 'fernhay-sidebar-logo.svg'"
+        }
+      ]
+    },
+
+    "splash_screen_logo_png": {
+      "_comment": "Logo shown on the loading/splash screen (PNG)",
+      "_type": "AssetsElement",
+      "value": [
+        {
+          "url": "FILL_IN: URL to splash screen logo PNG",
+          "name": "FILL_IN: e.g. 'fernhay-splash-logo.png'"
+        }
+      ]
+    },
+
+    "splash_screen_logo_svg": {
+      "_comment": "Logo shown on the loading/splash screen (SVG)",
+      "_type": "AssetsElement",
+      "value": [
+        {
+          "url": "FILL_IN: URL to splash screen logo SVG",
+          "name": "FILL_IN: e.g. 'fernhay-splash-logo.svg'"
+        }
+      ]
+    },
+
+    "primary_color": {
+      "_comment": "Primary brand color — buttons, active elements. CSS color value.",
+      "_type": "TextElement",
+      "_required": false,
+      "value": "FILL_IN: e.g. '#1A73E8' or 'rgb(26,115,232)'"
+    },
+
+    "primary_hover_color": {
+      "_comment": "Color when hovering on primary buttons/links. CSS color value.",
+      "_type": "TextElement",
+      "_required": false,
+      "value": "FILL_IN: e.g. '#1557B0'"
+    },
+
+    "secondary_color": {
+      "_comment": "Secondary brand color — accents, secondary buttons. CSS color value.",
+      "_type": "TextElement",
+      "_required": false,
+      "value": "FILL_IN: e.g. '#F5F5F5'"
+    },
+
+    "nav_link_active_color": {
+      "_comment": "Color for the active/selected navigation link in sidebar. CSS color value.",
+      "_type": "TextElement",
+      "_required": false,
+      "value": "FILL_IN: e.g. '#1A73E8'"
+    },
+
+    "misc_active_color": {
+      "_comment": "Color for selected filters, selected tabs, misc active UI. CSS color value.",
+      "_type": "TextElement",
+      "_required": false,
+      "value": "FILL_IN: e.g. '#1A73E8'"
+    },
+
+    "splash_screen_loader_color_1": {
+      "_comment": "First color in the splash screen loading animation. CSS color value.",
+      "_type": "TextElement",
+      "_required": false,
+      "value": "FILL_IN: e.g. '#1A73E8'"
+    },
+
+    "splash_screen_loader_color_2": {
+      "_comment": "Second color in the splash screen loading animation. CSS color value.",
+      "_type": "TextElement",
+      "_required": false,
+      "value": "FILL_IN: e.g. '#4CAF50'"
+    },
+
+    "splash_screen_loader_color_3": {
+      "_comment": "Third color in the splash screen loading animation. CSS color value.",
+      "_type": "TextElement",
+      "_required": false,
+      "value": "FILL_IN: e.g. '#FF9800'"
+    },
+
+    "flags": {
+      "_comment": "Feature flags for the app. Multiple choice element.",
+      "_type": "MultipleChoiceElement",
+      "_required": false,
+      "value": []
+    }
+  }
+}

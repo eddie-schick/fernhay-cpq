@@ -8,6 +8,14 @@ import InventoryTable, { type ColumnDef } from "./inventory-table";
 
 const COLUMNS: ColumnDef<ChassisItem>[] = [
   {
+    key: "manufacturer",
+    header: "Manufacturer",
+    type: "text",
+    editable: true,
+    getValue: (r) => r.manufacturer,
+    applyValue: (v) => ({ manufacturer: String(v) }),
+  },
+  {
     key: "modelName",
     header: "Model Name",
     type: "text",
@@ -62,14 +70,6 @@ const COLUMNS: ColumnDef<ChassisItem>[] = [
     editable: true,
     getValue: (r) => r.payloadCapacity.value,
     applyValue: (v) => ({ payloadCapacity: { value: Number(v) || 0, unit: "lbs" } }),
-  },
-  {
-    key: "manufacturer",
-    header: "Manufacturer",
-    type: "text",
-    editable: true,
-    getValue: (r) => r.manufacturer,
-    applyValue: (v) => ({ manufacturer: String(v) }),
   },
   {
     key: "status",

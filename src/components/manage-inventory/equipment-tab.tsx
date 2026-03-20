@@ -8,20 +8,20 @@ import InventoryTable, { type ColumnDef } from "./inventory-table";
 
 const COLUMNS: ColumnDef<OptionItem>[] = [
   {
-    key: "optionName",
-    header: "Option Name",
-    type: "text",
-    editable: true,
-    getValue: (r) => r.displayName || r.optionName,
-    applyValue: (v) => ({ displayName: String(v) }),
-  },
-  {
     key: "manufacturer",
     header: "Manufacturer",
     type: "text",
     editable: true,
     getValue: (r) => r.manufacturer || "EAVX",
     applyValue: (v) => ({ manufacturer: String(v) }),
+  },
+  {
+    key: "optionName",
+    header: "Option Name",
+    type: "text",
+    editable: true,
+    getValue: (r) => r.displayName || r.optionName,
+    applyValue: (v) => ({ displayName: String(v) }),
   },
   {
     key: "category",

@@ -8,6 +8,14 @@ import InventoryTable, { type ColumnDef } from "./inventory-table";
 
 const COLUMNS: ColumnDef<BodyItem>[] = [
   {
+    key: "manufacturer",
+    header: "Manufacturer",
+    type: "text",
+    editable: true,
+    getValue: (r) => r.manufacturer,
+    applyValue: (v) => ({ manufacturer: v }),
+  },
+  {
     key: "bodyType",
     header: "Body Type",
     type: "text",
@@ -22,14 +30,6 @@ const COLUMNS: ColumnDef<BodyItem>[] = [
     editable: true,
     getValue: (r) => r.variantName,
     applyValue: (v) => ({ variantName: v }),
-  },
-  {
-    key: "manufacturer",
-    header: "Manufacturer",
-    type: "text",
-    editable: true,
-    getValue: (r) => r.manufacturer,
-    applyValue: (v) => ({ manufacturer: v }),
   },
   {
     key: "basePrice",

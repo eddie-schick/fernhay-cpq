@@ -64,6 +64,14 @@ const COLUMNS: ColumnDef<ChassisItem>[] = [
     applyValue: (v) => ({ payloadCapacity: { value: Number(v) || 0, unit: "lbs" } }),
   },
   {
+    key: "manufacturer",
+    header: "Manufacturer",
+    type: "text",
+    editable: true,
+    getValue: (r) => r.manufacturer,
+    applyValue: (v) => ({ manufacturer: String(v) }),
+  },
+  {
     key: "status",
     header: "Status",
     type: "dropdown",

@@ -28,7 +28,7 @@
             ]
           },
           "description": {
-            "value": "<p>Open bed platform for municipal, utility, and campus operations. Built on Fernhay eAV electric cutaway chassis. Chassis designed by Fernhay, manufactured by EAVX.</p>"
+            "value": "<p>Open bed platform for municipal, utility, and campus operations. Built on Fernhay eAV electric cutaway chassis. Chassis designed and manufactured by Fernhay.</p>"
           },
           "image": {
             "value": [
@@ -84,7 +84,7 @@
                     "value": "Chassis"
                   },
                   "description": {
-                    "value": "Fernhay eAV electric cutaway chassis — designed by Fernhay, manufactured by EAVX"
+                    "value": "Fernhay eAV electric cutaway chassis — designed and manufactured by Fernhay"
                   },
                   "configuration_option_category": {
                     "value": []
@@ -137,8 +137,8 @@
                           "manufacturer": {
                             "value": [
                               {
-                                "name": "EAVX",
-                                "codename": "eavx"
+                                "name": "Fernhay",
+                                "codename": "fernhay"
                               }
                             ]
                           },

@@ -28,7 +28,7 @@
             ]
           },
           "description": {
-            "value": "<p>The Fernhay eAV Standard Box (Package Cube) is a modular box body built on the eAV electric cutaway chassis. Designed for last-mile delivery and service upfits with universal attachment points for interior customization. Chassis designed by Fernhay, manufactured by EAVX.</p>"
+            "value": "<p>The Fernhay eAV Standard Box (Package Cube) is a modular box body built on the eAV electric cutaway chassis. Designed for last-mile delivery and service upfits with universal attachment points for interior customization. Chassis designed and manufactured by Fernhay.</p>"
           },
           "image": {
             "value": [
@@ -84,7 +84,7 @@
                     "value": "Chassis"
                   },
                   "description": {
-                    "value": "Fernhay eAV electric cutaway chassis — designed by Fernhay, manufactured by EAVX"
+                    "value": "Fernhay eAV electric cutaway chassis — designed and manufactured by Fernhay"
                   },
                   "configuration_option_category": {
                     "value": []
@@ -137,8 +137,8 @@
                           "manufacturer": {
                             "value": [
                               {
-                                "name": "EAVX",
-                                "codename": "eavx"
+                                "name": "Fernhay",
+                                "codename": "fernhay"
                               }
                             ]
                           },
